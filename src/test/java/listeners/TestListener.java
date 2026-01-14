@@ -11,7 +11,7 @@ import org.testng.ITestResult;
 import utils.ExtentManager;
 
 public class TestListener implements ITestListener {
-    private static ExtentReports extent = ExtentManager.createInstance("target/ExtentReport.html");
+    private static ExtentReports extent = ExtentManager.createInstance("src/main/java/report/ExtentReport.html");
     private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 
     @Override
