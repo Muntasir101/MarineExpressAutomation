@@ -36,7 +36,6 @@ public class FleetManagementPage {
     }
 
     public void clickAddVesselButton(){
-        // driver.findElement(Add_Vessel_Button).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(Add_Vessel_Button)).click();
     }
 
@@ -44,5 +43,18 @@ public class FleetManagementPage {
         //driver.findElement(Vessel_Name).sendKeys(VesselName);
         wait.until(ExpectedConditions.visibilityOfElementLocated(Vessel_Name)).sendKeys(VesselName);
     }
+    public void enterYearBuild(String Year){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(Year_Build)).sendKeys(Year);
+    }
+    public void enterCapacity(String Capacity){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(Vessel_Capacity)).sendKeys(Capacity);
+    }
+
+    //Vessel Type
+    //Flag
+    //Location
+    //Status
+    //Register
+
 
 }
